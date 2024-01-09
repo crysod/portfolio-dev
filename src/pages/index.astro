@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import MailIcon from "../icons/Mail.astro";
 ---
 
-<Layout title="Porfolio de Cristian F. Ortega.">
+<Layout title="Porfolio de Cristian F. Ortega - Desarrollador y Programador Web">
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
       <h1 class="text-black text-5xl font-bold flex flex-row gap-x-4 pb-6">
@@ -22,7 +26,21 @@ import Badge from "../components/Badge.astro";
         <spam class="text-yellow-900 opacity-75">de Colombia, Valledupar</spam>.
         <spam class="text-black-1000 opacity-55">Especializado en crear soluciones únicas</spam>.
       </h2>
-      <ul></ul>
+      <nav class="flex  gap-x-2 my-4">
+        <SocialPill  href="https://www.linkedin.com/in/cristian-o">
+          <LinkedIn class="size-6"/>
+          LinkedIn
+        </SocialPill>
+        <SocialPill  href="https://github.com/crysod">
+          <GitHubIcon class="size-6"/>
+          GitHub
+        </SocialPill>
+        <SocialPill  href="">
+          <MailIcon class="size-6"/>
+          cristian.o.d@outlokk.com
+        </SocialPill>
+      </nav>
+      </ul>
     </section>
   </main>
 </Layout>
