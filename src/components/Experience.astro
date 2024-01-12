@@ -1,0 +1,33 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE =[
+    {
+        date: '01/09/2023 - 29/12/2023',
+        title: 'Director Operativo',
+        description: 'asjdbnsajdasbasdbasjdnisadbs sajdnasodas oashhdoasdoasd',
+        link: '#'
+    },
+    {
+        date: '01/08/2023 - 29/12/2023',
+        title: 'Practicante - Alcaldía Municipal de Valleddupar',
+        description: 'asjdbnsajdasbasdbasjdnisadbs sajdnasodas oashhdoasdoasd',
+        link: '#'
+    },
+    {
+        date: '01/06/2022 – 30/11/2022',
+        title: 'Apoyo técnico - Servicio Nacional de Aprendizaje - Sena - Tecnoparque (Nodo - V/par)',
+        description: '',
+        link: '#'
+    },
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCIE.map((experiencie)=>(
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experiencie}/>
+            </li>
+        ))
+    }             
+</ol>
+
