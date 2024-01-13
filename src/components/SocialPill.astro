@@ -1,5 +1,13 @@
-<a class="rounded-full border borde-white/10 flex justify-center items-center gap-x-2 py-3 px-4 bg-black/5 hover:bg-black/10 transition-color duration-200 hover:scale-105
-    href={Astro.props.href}"
+<a class={`
+    bg-black/5 hover:bg-black/10 transition-color duration-200 hover:scale-105
+    border borde-white/10 rounded-full 
+    flex justify-center items-center gap-x-2 
+    py-1 px-2 md:py-2 md:px-4
+    text-xs md:text-text-base
+    transition
+    `
+}
+    {...Astro.props}
     target="_blank"
     rel="noopener noreferrer">
     <slot />
